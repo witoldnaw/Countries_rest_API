@@ -1,0 +1,10 @@
+.flag {
+    width: 150px;
+    height: auto;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}

@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+
+
+.flag {
+  width: 10
+  0px;
+  height: auto;
+}
+
+.font {
+  color: red;
+}
+
+.list {
+  display: flex;
+}

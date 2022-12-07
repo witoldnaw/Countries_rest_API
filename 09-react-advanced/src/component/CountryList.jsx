@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "./CountryList.module.css"
 import { Link } from "react-router-dom";
-import {CountryDetails} from "./CountryDetails"
+
 
 
 
@@ -25,6 +25,7 @@ export function CountryList() {
           const {name, capital, population, flag
           } = country
             return (
+              <Link to={`/${name}`}>
               <div>
                 <h2>{name}</h2>
                 <p>Stolica: {capital}</p>
@@ -32,7 +33,7 @@ export function CountryList() {
                 <img src={flag} className={styles.flag} alt="flag" />
                 
               </div>
-              
+              </Link>
             )
 })}
         

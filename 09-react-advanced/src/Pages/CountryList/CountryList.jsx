@@ -3,9 +3,8 @@ import styles from "./CountryList.module.css"
 import { Link } from "react-router-dom";
 
 
-
-
 const Url = "https://restcountries.com/v2/all?fields=name,capital,flag,population,regions";
+
 
 export function CountryList() {
   const [countries, setCountry] = useState([]);
@@ -25,12 +24,13 @@ export function CountryList() {
           const {name, capital, population, flag
           } = country
             return (
-              <Link to={`/${name}`}>
-              <div>
+              <Link className={styles.link} to={`/${name}`}>
+              <div className={styles.countryWrapper}>
+                <img src={flag} className={styles.flag} alt="flag" />
                 <h2>{name}</h2>
                 <p>Stolica: {capital}</p>
                 <p>Populacja: {population}</p>
-                <img src={flag} className={styles.flag} alt="flag" />
+                
                 
               </div>
               </Link>

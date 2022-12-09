@@ -1,0 +1,46 @@
+:root{
+    background: #000707;
+}
+
+.flag {
+    width: 500px;
+    height: auto;
+    border-radius: 30px;
+}
+
+.detailsWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px;
+    text-align:justify;
+    color: aliceblue;
+}
+
+
+li {
+    list-style: none;
+    display: inline-block;
+    border-style:solid;
+    border-radius: 15px;
+    margin: 5px 5px;
+    padding: 10px 10px;
+}
+
+span {
+   font-size: 20px;
+   color: #c0c3c3;
+}
+
+.btn {
+    margin: 40px;
+    height: 35px;
+    width: 100px;
+    border-radius: 15px;
+    border-style: none;
+    background-color: #94beab;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #87cc9e;
+}

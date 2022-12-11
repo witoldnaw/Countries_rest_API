@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "create-react-app": "^5.0.1",
+    "react-js-switch": "^1.1.6",
     "react-router-dom": "^6.4.4"
   }
 }

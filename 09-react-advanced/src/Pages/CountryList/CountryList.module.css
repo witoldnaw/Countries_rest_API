@@ -1,7 +1,7 @@
 
 .flag {
     width: 100%;
-    height: 50%;
+    height: 53%;
 }
 
 .list {
@@ -9,12 +9,11 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     padding: 30px 70px;
-    background: #000707;
+    /* background: #000707; */
 }
 
 .countryWrapper {
     background: #0c2a2f;
-    margin: 0 20px;
     text-align: center;
     height: 24vw;
     margin: 20px 20px;

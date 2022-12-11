@@ -16,3 +16,19 @@
 .list {
   display: flex;
 }
+
+
+#darkMode {
+  background: #161717;
+  color: white;
+}
+#lightMode {
+  background-color: #dce0e0;
+  color: rgb(16, 33, 27);
+
+}
+
+
+.switch {
+  color: red;
+}

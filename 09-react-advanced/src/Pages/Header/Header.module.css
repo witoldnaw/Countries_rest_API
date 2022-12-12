@@ -1,18 +1,14 @@
 .headerWrapper {
     /* background: #0c2a2f; */
     /* color: lightgray; */
-    display: flex;
-    justify-content:space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     padding: 0 30px;
 }
 
-.btnDarkMode {
-    height: 30px;
-    width: 90px;
-    background: black;
-    border-style: none;
-    border-radius: 10px;
-    margin: 25px 0 25px 0;
-    color: white
+
+.switch {
     
+    padding: 50px 10px 10px 10px;
 }

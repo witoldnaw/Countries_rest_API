@@ -1,39 +1,58 @@
 .App {
   text-align: center;
-}
-
-
-.flag {
-  width: 10
-  0px;
-  height: auto;
-}
-
-.font {
-  color: red;
-}
-
-.list {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 
-.darkMode {
-  background: #001c13;
-  color: white;
-}
-.lightMode {
-  background-color: #ade0c9;
-  color: rgb(16, 33, 27);
-}
+
+/* HEADER */
 
 .headerLight {
-  background-color: brown;
+  background-color: #d7e2e1;
+  color: rgb(16, 33, 27);
+  display: flex;
+  padding-left: 100px;
 }
 
 .headerDark {
-  background-color: darkslategray;
+  background-color: #000000;
+  color: white;
+  display: flex;
+  padding-left: 100px;
 }
-.switch {
-  color: red;
+
+/* MAIN */
+
+.darkMode {
+  background: #0f1021;
+  color: #d9b650;
+}
+.lightMode {
+  background-color: #e8edec;
+  color: rgb(16, 33, 27);
+}
+
+/* COUNTRY LIST */
+
+.lightCountryWrapper {
+  background: #d8e8e6;
+  color: white;
+  text-align: center;
+  height: 24vw;
+  margin: 20px 20px;
+  color: rgb(29, 31, 30);
+  border-radius: 20px;
+}
+
+.darkCountryWrapper {
+  background: rgb(1, 30, 58);
+  color: black;
+  text-align: center;
+  height: 24vw;
+  margin: 20px 20px;
+  color: white;
+  border-radius: 20px;
 }

@@ -1,10 +1,12 @@
 import { useParams, Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import styles from "./CountryDetails.module.css";
+import PacmanLoader from "react-spinners/PacmanLoader";
 
 export const CountryDetails = () => {
   let [countries, setCountry] = useState([]);
   let { name } = useParams();
+  const [loading, setLoading] = useState(false);
   console.log(countries);
 
   useEffect(() => {
@@ -17,8 +19,16 @@ export const CountryDetails = () => {
       });
   }, [name]);
 
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
   return (
     <>
+   
       <Link to="/">
         <button className={styles.btn}>BACK</button>
       </Link>
@@ -32,9 +42,9 @@ export const CountryDetails = () => {
                 <img src={flag} className={styles.flag} alt="flag" />
                 <div>
                   <h1>{name}</h1>
-                  <span>
+                  <p>
                     <b>Stolica:</b> {capital}
-                  </span>
+                  </p>
                   <p>
                     <b>Region:</b> {region}
                   </p>
@@ -60,6 +70,6 @@ export const CountryDetails = () => {
           );
         })}
       </div>
-    </>
+)}</>
   );
 };

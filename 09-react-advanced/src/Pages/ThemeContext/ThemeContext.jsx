@@ -1,22 +1,13 @@
 import { createContext } from "react";
 import { useState } from "react";
 
-
-export const ThemeContext = createContext()
+export const ThemeContext = createContext();
 
 export const ThemeProvider = (props) => {
-    const [darkMode, setDarkMode] = useState(false)
-    return (
-        <ThemeContext.Provider value={{darkMode, setDarkMode}}>
-            {props.children}
-        </ThemeContext.Provider>
-    )
-}
-
-
-// const [theme, setTheme] = useState("lightMode");
-// const toggleTheme = () => {
-//   setTheme((currently) =>
-//     currently === "lightMode" ? "darkMode" : "lightMode"
-//   );
-// };
+  const [darkMode, setDarkMode] = useState(false);
+  return (
+    <ThemeContext.Provider value={{ darkMode, setDarkMode }}>
+      {props.children}
+    </ThemeContext.Provider>
+  );
+};

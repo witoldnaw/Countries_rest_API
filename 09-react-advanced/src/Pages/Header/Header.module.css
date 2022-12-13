@@ -1,14 +1,6 @@
-.headerWrapper {
-    /* background: #0c2a2f; */
-    /* color: lightgray; */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    padding: 0 30px;
-}
-
-
 .switch {
-    
-    padding: 50px 10px 10px 10px;
+  display: flex;
+  padding-left: 250px;
+  align-items: center;
+  font-size: 12px;
 }

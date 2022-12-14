@@ -1,8 +1,8 @@
 .flag {
-  width: 500px;
+  width: 50vh;
   height: auto;
   border-radius: 30px;
-  margin-left: 100px;
+  margin: 0 100px 0 100px;
 }
 
 .detailsWrapper {
@@ -33,3 +33,9 @@ li {
 .btn:hover {
   background: #87cc9e;
 }
+
+.loading {
+  display: flex;
+  justify-content: center;
+}
+

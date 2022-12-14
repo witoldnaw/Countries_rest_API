@@ -28,48 +28,53 @@ export const CountryDetails = () => {
 
   return (
     <>
-   
       <Link to="/">
         <button className={styles.btn}>BACK</button>
       </Link>
-      <div className={styles.details}>
-        {countries.map((e) => {
-          let { name, capital, region, flag, subregion, borders } = e;
+      <div className={styles.loading}>
+        {loading ? (
+          <PacmanLoader color={"#36d7b7"} loading={loading} size={80} />
+        ) : (
+          <div>
+            {countries.map((e) => {
+              let { name, capital, region, flag, subregion, borders } = e;
 
-          return (
-            <>
-              <div className={styles.detailsWrapper}>
-                <img src={flag} className={styles.flag} alt="flag" />
-                <div>
-                  <h1>{name}</h1>
-                  <p>
-                    <b>Stolica:</b> {capital}
-                  </p>
-                  <p>
-                    <b>Region:</b> {region}
-                  </p>
-                  <p>
-                    <b>Subregion:</b> {subregion}
-                  </p>
-
-                  {borders && (
-                    <>
+              return (
+                <>
+                  <div className={styles.detailsWrapper}>
+                    <img src={flag} className={styles.flag} alt="flag" />
+                    <div>
+                      <h1>{name}</h1>
                       <p>
-                        <b>Borders:</b>{" "}
+                        <b>Stolica:</b> {capital}
                       </p>
-                      <ul>
-                        {borders.map((border, index) => (
-                          <li key={index}>{border}</li>
-                        ))}
-                      </ul>
-                    </>
-                  )}
-                </div>
-              </div>
-            </>
-          );
-        })}
+                      <p>
+                        <b>Region:</b> {region}
+                      </p>
+                      <p>
+                        <b>Subregion:</b> {subregion}
+                      </p>
+
+                      {borders && (
+                        <>
+                          <p>
+                            <b>Borders:</b>{" "}
+                          </p>
+                          <ul>
+                            {borders.map((border, index) => (
+                              <li key={index}>{border}</li>
+                            ))}
+                          </ul>
+                        </>
+                      )}
+                    </div>
+                  </div>
+                </>
+              );
+            })}
+          </div>
+        )}
       </div>
-)}</>
+    </>
   );
 };

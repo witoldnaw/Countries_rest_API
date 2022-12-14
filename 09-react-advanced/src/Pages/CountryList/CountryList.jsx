@@ -30,9 +30,9 @@ export function CountryList() {
   }, []);
 
   return (
-    <div className="App">
+    <div className={styles.loading}>
       {loading ? (
-        <PacmanLoader color={"#36d7b7"} loading={loading} size={100}/>
+        <PacmanLoader color={"#36d7b7"} loading={loading} size={80}/>
       ) : (
         <div className={styles.list}>
           {countries.map((country) => {

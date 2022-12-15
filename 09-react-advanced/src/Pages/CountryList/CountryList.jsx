@@ -7,8 +7,6 @@ import PacmanLoader from "react-spinners/PacmanLoader";
 const Url =
   "https://restcountries.com/v2/all?fields=name,capital,flag,population,regions";
 
-
-
 export function CountryList() {
   const [countries, setCountry] = useState([]);
   const { darkMode } = useContext(ThemeContext);
@@ -32,7 +30,7 @@ export function CountryList() {
   return (
     <div className={styles.loading}>
       {loading ? (
-        <PacmanLoader color={"#36d7b7"} loading={loading} size={80}/>
+        <PacmanLoader color={"#36d7b7"} loading={loading} size={80} />
       ) : (
         <div className={styles.list}>
           {countries.map((country) => {
@@ -41,7 +39,7 @@ export function CountryList() {
               <Link to={`/${name}`}>
                 <div
                   className={
-                    darkMode ? "darkCountryWrapper" : "lightCountryWrapper"
+                    darkMode ? styles.darkCountryWrapper : styles.lightCountryWrapper
                   }
                 >
                   <img src={flag} className={styles.flag} alt="flag" />

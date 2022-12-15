@@ -1,14 +1,14 @@
 .flag {
-  width: 50vh;
-  height: auto;
+  width: 90%;
   border-radius: 30px;
-  margin: 0 100px 0 100px;
+  margin: 0 5vw;
 }
 
 .detailsWrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-bottom: 300px;
+  text-align: center;
 }
 
 li {
@@ -20,8 +20,8 @@ li {
   padding: 10px 10px;
 }
 
-.btn {
-  margin: 50px 50px 50px 100px;
+.btnBack {
+  margin: 50px;
   height: 35px;
   width: 100px;
   border-radius: 15px;
@@ -39,3 +39,25 @@ li {
   justify-content: center;
 }
 
+
+
+@media (max-width: 768px) {
+  .detailsWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .countryDescription {
+    text-align: center;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .detailsWrapper {
+    grid-template-columns: 1fr 1fr;
+}
+
+.countryDescription {
+  text-align: center;
+}
+}

@@ -1,6 +1,28 @@
-.switch {
-  display: flex;
-  padding-left: 250px;
-  align-items: center;
-  font-size: 12px;
+.headerLight {
+    background-color: #d7e2e1;
+    color: rgb(16, 33, 27);
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-evenly;
+  }
+  
+  .headerDark {
+    background-color: #000000;
+    color: white;
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-evenly;
+  }
+
+  .switch {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+  }
+  
+
+  @media (max-width: 500px) {
+    h1 {
+        font-size: 24px;
+  }
 }

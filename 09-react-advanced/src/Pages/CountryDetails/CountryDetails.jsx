@@ -7,7 +7,6 @@ export const CountryDetails = () => {
   let [countries, setCountry] = useState([]);
   let { name } = useParams();
   const [loading, setLoading] = useState(false);
-  console.log(countries);
 
   useEffect(() => {
     fetch(
@@ -29,7 +28,7 @@ export const CountryDetails = () => {
   return (
     <>
       <Link to="/">
-        <button className={styles.btn}>BACK</button>
+        <button className={styles.btnBack}>BACK</button>
       </Link>
       <div className={styles.loading}>
         {loading ? (
@@ -43,7 +42,7 @@ export const CountryDetails = () => {
                 <>
                   <div className={styles.detailsWrapper}>
                     <img src={flag} className={styles.flag} alt="flag" />
-                    <div>
+                    <div className={styles.countryDescription}>
                       <h1>{name}</h1>
                       <p>
                         <b>Stolica:</b> {capital}

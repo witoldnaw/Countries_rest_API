@@ -37,15 +37,11 @@ export function CountryList() {
             const { name, capital, population, flag } = country;
             return (
               <Link to={`/${name}`}>
-                <div
-                  className={
-                    darkMode ? styles.darkCountryWrapper : styles.lightCountryWrapper
-                  }
-                >
+                <div className={darkMode ? styles.darkCountryWrapper : styles.lightCountryWrapper}>
                   <img src={flag} className={styles.flag} alt="flag" />
                   <h2>{name}</h2>
-                  <p>Stolica: {capital}</p>
-                  <p>Populacja: {population}</p>
+                  <p>Capital: {capital}</p>
+                  <p>Population: {population}</p>
                 </div>
               </Link>
             );
